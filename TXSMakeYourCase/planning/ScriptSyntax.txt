@@ -1,0 +1,241 @@
+
+---
+list of TextTypes:
+00: normal text
+01: text with multiple choice:
+02: text with forced presentables prompt
+10: opposition's cross examination, questions being asked
+
+20: player's cross examination which expects player to choose a subject of discussion
+	(multiple choice or presentables)
+21: player's/opposition's cross examination, witness testimony
+22: player's cross examination, questions in dialogue box
+---
+
+00, 02, 10:
+>[TextID]|[CharacterID]|[TextType]|[Text]|[Commands]|[Comments]
+01:
+>[TextID]|[CharacterID]|[TextType]|[Text]|{[Choice];}*n|[Commands]}|[Comments]
+20:
+>[TextID]|[CharacterID]|[TextType]|{[Text]}|[Commands]}|[Comments]
+
+---
+presentables syntax
+type of presentable (one digit)
+	0: evidence
+	1: profiles
+	2: articles
+case of presentable (one digit)
+id of presentable (two digits)
+update of presentable (two digit).
+---
+list of Commands:
+
+commands will be executed in the given order every undelayed frame. commands that have been executed successfully will be removed from the list.
+
+###: ###
+
+000 - 099 ~ if commands/conditions:
+
+000: if(choice==0){
+001: if(choice==1)
+002: if(choice==2)
+003: if(choice==3)
+004: if(choice==4)
+005: if(choice==5)
+006: if(choice==6)
+007: if(choice==7)
+008: if(choice==8)
+009: if(choice==9)
+
+
+010: if(presented==xxxxxx) //evidence has been presented
+011: if(invalid==xxxxxx) //evidence is invalid
+012: if(memorized==xxxxxx) //text has been memorized
+
+020: if(objection==contradiction) //question/answer contradicts presentable
+021: if(objection==irrelevant) //question is not relevant or based on lacking evidence
+022: if(objection==unreasonable) //question can not be answered by witness
+023: if(objection==
+024: if(objection==indecisive) //answer isn't sufficiently detailled
+025: if(objection==evaded) //answer wasn't answered at all
+026: if(objection==
+
+040: if expression (neutral)
+041: if expression (empathetic)
+042: if expression (sarcastic)
+043: if expression (aggressive)
+
+050: if(flag(xxx)==xxx)
+051: if(flag(xxx)<=xxx)
+052: if(flag(xxx)>=xxx)
+053: if(text_repetitions>=xxx)
+
+
+
+090: if number of current char being written is xxx
+091: if number of current word being written is xxx
+092: if (all_chars_written)
+
+098: or --> if(objection==contradiction or objection==irrelevant)
+099: } //for if, store_cmds(), 
+
+
+
+
+
+100 - 199 ~ branching commands:
+
+100: text0=this_text //return points after making a mistake
+101: text1=this_text
+102: text2=this_text
+103: set index 3 text to this text
+104: set index 4 text to this text
+105: set index 5 text to this text
+106: set index 6 text to this text
+107: set index 7 text to this text
+108: set index 8 text to this text
+109: set index 9 text to this text
+
+110: text0=xxxxxx
+111: set index 1 text to xxx.xxxxxx
+112: set index 2 text to xxx.xxxxxx
+113: set index 3 text to xxx.xxxxxx
+114: set index 4 text to xxx.xxxxxx
+115: set index 5 text to xxx.xxxxxx
+116: set index 6 text to xxx.xxxxxx
+117: set index 7 text to xxx.xxxxxx
+118: set index 8 text to xxx.xxxxxx
+119: set index 9 text to xxx.xxxxxx
+
+120: text0=previous_text
+121: set index 1 text to previous text
+122: set index 2 text to previous text
+123: set index 3 text to previous text
+124: set index 4 text to previous text
+125: set index 5 text to previous text
+126: set index 6 text to previous text
+127: set index 7 text to previous text
+128: set index 8 text to previous text
+129: set index 9 text to previous text
+
+130: next_text=text0
+131: set next text to index 1
+132: set next text to index 2
+133: set next text to index 3
+134: set next text to index 4
+135: set next text to index 5
+136: set next text to index 6
+137: set next text to index 7
+138: set next text to index 8
+139: set next text to index 9
+
+140: next_text=xxxxxx
+141: continue with next text automatically
+
+
+
+
+200 - 299 ~ presentable commands:
+
+200: unlock evidence/profiles/notes/articles or their respective updates
+201: invalidate evidence/profiles/notes/articles or their respective updates
+202: revalidate evidence/profiles/notes/articles or their respective updates
+
+210: set and unlock choice at index 0 of current text, example: 210.123456
+211: set and unlock choice at index 1 of current text: 
+212: set and unlock choice at index 2 of current text: 
+213: set and unlock choice at index 3 of current text: 
+214: set and unlock choice at index 4 of current text: 
+215: set and unlock choice at index 5 of current text: 
+216: set and unlock choice at index 6 of current text: 
+217: set and unlock choice at index 7 of current text: 
+218: set and unlock choice at index 8 of current text: 
+219: set and unlock choice at index 9 of current text: 
+
+220: increase behavior by xxx
+221: decrease behavior by xxx
+222: increase credibility by xxx
+223: decrease credibility by xxx
+224: increase evidence by xxx
+225: decrease evidence by xxx
+226: increase expression by xxx
+227: decrease expression by xxx
+228: increase overall by xxx
+229: decrease overall by xxx
+
+
+
+
+
+300 - 399 ~ flag/timer commands:
+
+300: flag(xxx)=xxx
+
+310: restart_timer(0)
+311: restart_timer(1)
+312: restart_timer(2)
+313: restart_timer(3)
+314: restart_timer(4)
+315: restart_timer(5)
+316: restart_timer(6)
+317: restart_timer(7)
+318: restart_timer(8)
+319: restart_timer(9)
+31A: restart_timer(all)
+
+
+
+
+
+
+400 - 499 ~ visuals:
+
+400: set talking character and character to xxx.xxx
+401: set perspective and animation to xxx.xxx
+
+410: fade out text when continuing
+411: set text color to xxx.xxx.xxx.xxx
+
+420: char_cooldown=xxx
+421: word_cooldown=xxx
+422: delay=xxx --> delays next char and skips all following commands of the current iteration!
+
+
+500 - 599 ~ sounds:
+
+
+600 - 699 ~ command reload storage:
+
+600: store_in_cmds(0){ --> 600.[].099 //used to transfer commands to generic presentable prompts
+601: store_in_cmds(1){  
+602: store_in_cmds(2){
+603: store_in_cmds(3){
+604: store_in_cmds(4){ //used to repeat reacurring sets of visuals or sounds
+605: store_in_cmds(5){ 
+606: store_in_cmds(6){
+607: store_in_cmds(7){
+608: store_in_cmds(8){
+609: store_in_cmds(9){
+
+610: clear_cmds(0)
+611: clear_cmds(1)
+612: clear_cmds(2)
+613: clear_cmds(3)
+614: clear_cmds(4)
+615: clear_cmds(5)
+616: clear_cmds(6)
+617: clear_cmds(7)
+618: clear_cmds(8)
+619: clear_cmds(9)
+
+61A: clear_cmds(all)
+
+620: enable_cmds(0)
+
+630: insert_cmds(0)
+
+640: disable_cmds(0)
+
+
+

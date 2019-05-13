@@ -1,0 +1,11 @@
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\bin\Debug\TXSMakeYourCase.exe.config
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\bin\Debug\TXSMakeYourCase.exe
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\bin\Debug\TXSMakeYourCase.pdb
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.csprojResolveAssemblyReference.cache
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.Properties.Resources.resources
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.csproj.GenerateResource.Cache
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.exe
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.pdb
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.MainMenu.resources
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.TextEditor.resources
+D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.CmdEditor.resources

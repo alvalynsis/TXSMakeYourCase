@@ -1,0 +1,8 @@
+dialogue editor
+	+command editor (user code, game code)
+dialogue search (tag filter)
+evidence editor (evidence categories and individual pieces of evidence)
+flag editor (custom names, given IDs and references)
+character window (character ID, sprite animations, name)
+bgm window
+sfx window
