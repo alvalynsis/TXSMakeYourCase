@@ -41,11 +41,11 @@
             this.tb_text = new System.Windows.Forms.TextBox();
             this.btn_saveAndNext = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cb_splitText = new System.Windows.Forms.CheckBox();
             this.tb_choices = new System.Windows.Forms.TextBox();
             this.lb_choices = new System.Windows.Forms.Label();
             this.lb_userCommands = new System.Windows.Forms.Label();
-            this.tb_userCommands = new System.Windows.Forms.TextBox();
+            this.tb_commands = new System.Windows.Forms.TextBox();
             this.btn_editWithCmdEditor = new System.Windows.Forms.Button();
             this.rb_userCode = new System.Windows.Forms.RadioButton();
             this.rb_gameCode = new System.Windows.Forms.RadioButton();
@@ -170,15 +170,15 @@
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cb_splitText
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(420, 133);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(274, 19);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "Split Into Multiple Text Boxes (if limit reached)";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cb_splitText.AutoSize = true;
+            this.cb_splitText.Location = new System.Drawing.Point(420, 133);
+            this.cb_splitText.Name = "cb_splitText";
+            this.cb_splitText.Size = new System.Drawing.Size(262, 19);
+            this.cb_splitText.TabIndex = 13;
+            this.cb_splitText.Text = "Split Into Multiple DlgTexts (if limit reached)";
+            this.cb_splitText.UseVisualStyleBackColor = true;
             // 
             // tb_choices
             // 
@@ -207,14 +207,14 @@
             this.lb_userCommands.TabIndex = 17;
             this.lb_userCommands.Text = "Commands";
             // 
-            // tb_userCommands
+            // tb_commands
             // 
-            this.tb_userCommands.Location = new System.Drawing.Point(21, 435);
-            this.tb_userCommands.Multiline = true;
-            this.tb_userCommands.Name = "tb_userCommands";
-            this.tb_userCommands.Size = new System.Drawing.Size(676, 71);
-            this.tb_userCommands.TabIndex = 16;
-            this.tb_userCommands.Text = "Why would you say that lorem ipsum gay shit man";
+            this.tb_commands.Location = new System.Drawing.Point(21, 435);
+            this.tb_commands.Multiline = true;
+            this.tb_commands.Name = "tb_commands";
+            this.tb_commands.Size = new System.Drawing.Size(676, 71);
+            this.tb_commands.TabIndex = 16;
+            this.tb_commands.Text = "Why would you say that lorem ipsum gay shit man";
             // 
             // btn_editWithCmdEditor
             // 
@@ -257,10 +257,10 @@
             this.Controls.Add(this.rb_userCode);
             this.Controls.Add(this.btn_editWithCmdEditor);
             this.Controls.Add(this.lb_userCommands);
-            this.Controls.Add(this.tb_userCommands);
+            this.Controls.Add(this.tb_commands);
             this.Controls.Add(this.lb_choices);
             this.Controls.Add(this.tb_choices);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.cb_splitText);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.btn_saveAndNext);
             this.Controls.Add(this.tb_text);
@@ -297,11 +297,11 @@
         private System.Windows.Forms.TextBox tb_text;
         private System.Windows.Forms.Button btn_saveAndNext;
         private System.Windows.Forms.Button btn_Save;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cb_splitText;
         private System.Windows.Forms.TextBox tb_choices;
         private System.Windows.Forms.Label lb_choices;
         private System.Windows.Forms.Label lb_userCommands;
-        private System.Windows.Forms.TextBox tb_userCommands;
+        private System.Windows.Forms.TextBox tb_commands;
         private System.Windows.Forms.Button btn_editWithCmdEditor;
         private System.Windows.Forms.RadioButton rb_userCode;
         private System.Windows.Forms.RadioButton rb_gameCode;

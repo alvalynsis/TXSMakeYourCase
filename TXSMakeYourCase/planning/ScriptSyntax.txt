@@ -53,13 +53,17 @@ commands will be executed in the given order every undelayed frame. commands tha
 011: if(invalid==xxxxxx) //evidence is invalid
 012: if(memorized==xxxxxx) //text has been memorized
 
-020: if(objection==contradiction) //question/answer contradicts presentable
-021: if(objection==irrelevant) //question is not relevant or based on lacking evidence
-022: if(objection==unreasonable) //question can not be answered by witness
-023: if(objection==
-024: if(objection==indecisive) //answer isn't sufficiently detailled
-025: if(objection==evaded) //answer wasn't answered at all
-026: if(objection==
+
+//objection reasons can be customized
+020: if(qst_objection==contradiction) //question contradicts testimony
+021: if(qst_objection==irrelevant) //question is not relevant or based on lacking evidence
+022: if(qst_objection==unreasonable) //question can not be answered by witness
+023: if(qst_objection==
+024: if(qst_objection==indecisive) //answer isn't sufficiently detailled
+025: if(qst_objection==evaded) //answer wasn't answered at all
+026: if(qst_objection==
+
+030: if(ans_objection==) //answer contradicts testimony
 
 040: if expression (neutral)
 041: if expression (empathetic)
@@ -76,6 +80,7 @@ commands will be executed in the given order every undelayed frame. commands tha
 090: if number of current char being written is xxx
 091: if number of current word being written is xxx
 092: if (all_chars_written)
+093: if (char_Unicode==xxx)
 
 098: or --> if(objection==contradiction or objection==irrelevant)
 099: } //for if, store_cmds(), 
@@ -84,7 +89,7 @@ commands will be executed in the given order every undelayed frame. commands tha
 
 
 
-100 - 199 ~ branching commands:
+100 - 199 ~ dialogue commands:
 
 100: text0=this_text //return points after making a mistake
 101: text1=this_text
@@ -131,7 +136,7 @@ commands will be executed in the given order every undelayed frame. commands tha
 139: set next text to index 9
 
 140: next_text=xxxxxx
-141: continue with next text automatically
+141: continue with next text instantly.
 
 
 
@@ -153,40 +158,28 @@ commands will be executed in the given order every undelayed frame. commands tha
 218: set and unlock choice at index 8 of current text: 
 219: set and unlock choice at index 9 of current text: 
 
-220: increase behavior by xxx
-221: decrease behavior by xxx
-222: increase credibility by xxx
-223: decrease credibility by xxx
-224: increase evidence by xxx
-225: decrease evidence by xxx
-226: increase expression by xxx
-227: decrease expression by xxx
-228: increase overall by xxx
-229: decrease overall by xxx
 
 
 
 
 
-300 - 399 ~ flag/timer commands:
+
+300 - 399 ~ flags/jury commands:
 
 300: flag(xxx)=xxx
+301: flag(xxx)-=xxx
+302: flag(xxx)+=xxx
 
-310: restart_timer(0)
-311: restart_timer(1)
-312: restart_timer(2)
-313: restart_timer(3)
-314: restart_timer(4)
-315: restart_timer(5)
-316: restart_timer(6)
-317: restart_timer(7)
-318: restart_timer(8)
-319: restart_timer(9)
-31A: restart_timer(all)
+310: juryCriteria(0)+=xxx
+31A: juryCriteria(overall)+=xxx
 
+320: juryCriteria(0)-=xxx
+32A: juryCriteria(overall)-=xxx
 
-
-
+330: flag(xxx).timer_enabled=xxx;
+331: flag(xxx).increment_time=xxx;
+332: reset_flag(xxx);
+333: flag(xxx)=flag(xxx);
 
 
 400 - 499 ~ visuals:
@@ -194,12 +187,18 @@ commands will be executed in the given order every undelayed frame. commands tha
 400: set talking character and character to xxx.xxx
 401: set perspective and animation to xxx.xxx
 
-410: fade out text when continuing
-411: set text color to xxx.xxx.xxx.xxx
 
-420: char_cooldown=xxx
-421: word_cooldown=xxx
-422: delay=xxx --> delays next char and skips all following commands of the current iteration!
+410: text_color.set(xxx.xxx.xxx.xxx.xxx) -- red,green,blue,alpha,frame_delay
+411: background_color.set(xxx.xxx.xxx.xxx.xxx)
+412: screen_color.set(xxx.xxx.xxx.xxx.xxx)
+
+419: sprite(xxx)_color.set(xxx.xxx.xxx.xxx.xxx)
+
+420: 
+
+440: char_cooldown=xxx
+441: word_cooldown=xxx
+442: delay=xxx --> delays next char and skips all following commands of the current iteration!
 
 
 500 - 599 ~ sounds:
@@ -208,7 +207,7 @@ commands will be executed in the given order every undelayed frame. commands tha
 600 - 699 ~ command reload storage:
 
 600: store_in_cmds(0){ --> 600.[].099 //used to transfer commands to generic presentable prompts
-601: store_in_cmds(1){  
+601: store_in_cmds(1){  //used to transfer commands over opponent cross examination sections
 602: store_in_cmds(2){
 603: store_in_cmds(3){
 604: store_in_cmds(4){ //used to repeat reacurring sets of visuals or sounds
@@ -237,5 +236,6 @@ commands will be executed in the given order every undelayed frame. commands tha
 
 640: disable_cmds(0)
 
-
+650: retain_executed_cmds=false;
+651: retain_executed_cmds=true;
 

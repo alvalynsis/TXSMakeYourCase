@@ -9,3 +9,17 @@ D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMa
 D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.MainMenu.resources
 D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.TextEditor.resources
 D:\JuicyFruitNr3 Games\Trial Excess\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.CmdEditor.resources
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\bin\Debug\TXSMakeYourCase.exe.config
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.exe
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.pdb
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\bin\Debug\TXSMakeYourCase.exe
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\bin\Debug\TXSMakeYourCase.pdb
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.csprojResolveAssemblyReference.cache
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.CmdEditor.resources
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.MainMenu.resources
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.Properties.Resources.resources
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.TextEditor.resources
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.csproj.GenerateResource.Cache
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.CharacterEditor.resources
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.FlagEditor.resources
+C:\Users\MarttiRa\Documents\GitHub\TXSMakeYourCase\TXSMakeYourCase\TXSMYC\TXSMakeYourCase\TXSMakeYourCase\obj\Debug\TXSMakeYourCase.MechanicsEditor.resources
